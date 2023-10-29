@@ -15,7 +15,7 @@ int main() {
 		.repeat = 10
 	};
 
-	int dev = open("/dev/mydevice", O_RDONLY);
+	int dev = open("/dev/mydevice", O_WRONLY);
 	if(dev == -1) {
 		printf("Opening was not possible!\n");
 		return -1;
