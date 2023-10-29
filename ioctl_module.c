@@ -101,7 +101,7 @@ static int __init ModuleInit(void) {
  */
 static void __exit ModuleExit(void) {
 	unregister_chrdev(MYMAJOR, "my_ioctl_module");
-	printk("Goodbye, Kernel\n");
+	printk("Goodbye, Kernel!!!!\n");
 }
 
 module_init(ModuleInit);
